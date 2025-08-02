@@ -16,7 +16,7 @@ import { toast } from 'react-toastify'
 function SummeryDetail({ enableNext }) {
 
   const { resumeInfo, setResumeInfo } = useContext(ResumeInfoContext)
-  const PROMPT = `Give me a personal summery for  ${JSON.stringify(resumeInfo?.summery)} in 4-5 lines.`
+  const PROMPT = `Give me a personal summery for  ${JSON.stringify(resumeInfo?.jobTitle)} in 4-5 lines.`
   const [loading, setLoading] = useState(false);
    const [loading2, setLoading2] = useState(false);
   const params = useParams();
