@@ -83,7 +83,7 @@ function SummeryDetail({ enableNext }) {
               </div>
                   <EditorProvider>
                       <Editor value={summery} 
-                      className='text-[8px] h-30'
+                      className='text-[8px] sm:text-[16px] h-30'
                       defaultValue={resumeInfo?.summery}
                        onChange={(e) =>{setSummery(e.target.value)}}>
                           <Toolbar >

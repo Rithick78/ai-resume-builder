@@ -41,7 +41,7 @@ function RichPrev({ onRichPrev, index, defaultValue }) {
                     </Button>}
             </div>
             <EditorProvider >
-                <Editor value={value} className='text-[8px]' onChange={(e) => {
+                <Editor value={value} className='text-[8px] sm:text-[16px]' onChange={(e) => {
                     setValue(e.target.value)
                     onRichPrev(e)
                 }}>
