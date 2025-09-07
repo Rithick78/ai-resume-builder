@@ -69,6 +69,7 @@ function AddResume() {
     
                       <Button variant='outline' onClick={()=>setOpenDailog(false)}>Cancel</Button>
                       <Button onClick={()=>onCreate()} disabled={!resumeTitle||loading} >
+                        
                         {loading?<Loader2 className='animate-spin'/>:"Create"}</Button>
         
                 </DialogDescription>
